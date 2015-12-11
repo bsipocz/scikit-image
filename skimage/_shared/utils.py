@@ -41,9 +41,9 @@ class deprecated(object):
 
         alt_msg = ''
         if self.alt_func is not None:
-            alt_msg = ' Use ``%s`` instead.' % self.alt_func
+            alt_msg = ' Use `%s` instead.' % self.alt_func
 
-        msg = 'Call to deprecated function ``%s``.' % func.__name__
+        msg = 'Call to deprecated function `%s`.' % func.__name__
         msg += alt_msg
 
         @functools.wraps(func)
